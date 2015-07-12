@@ -28,6 +28,11 @@ ifneq ($(filter mako,$(TARGET_DEVICE)),)
   LOCAL_ARCH := arm
 endif
 
+ifneq ($(filter v500,$(TARGET_DEVICE)),)
+  include $(SM_VENDOR)/device/sm_v500.mk
+  LOCAL_ARCH := arm
+endif
+
 ifneq ($(filter shamu,$(TARGET_DEVICE)),)
   include $(SM_VENDOR)/device/sm_shamu.mk
   LOCAL_ARCH := arm

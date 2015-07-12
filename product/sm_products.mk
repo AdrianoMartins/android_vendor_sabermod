@@ -26,6 +26,10 @@ ifneq ($(filter %mako,$(TARGET_PRODUCT)),)
   TARGET_DEVICE := mako
 endif
 
+ifneq ($(filter %v500,$(TARGET_PRODUCT)),)
+  TARGET_DEVICE := v500
+endif
+
 ifneq ($(filter %shamu,$(TARGET_PRODUCT)),)
   TARGET_DEVICE := shamu
 endif

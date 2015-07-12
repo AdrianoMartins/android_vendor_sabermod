@@ -36,3 +36,7 @@ endif
 ifneq ($(filter %mako,$(TARGET_PRODUCT)),)
   $(shell unset CONFIG_MACH_MSM8960_MAKO_STRICT_ALIASING)
 endif
+
+ifneq ($(filter %v500,$(TARGET_PRODUCT)),)
+  $(shell unset CONFIG_MACH_MSM8960_MAKO_STRICT_ALIASING)
+endif
